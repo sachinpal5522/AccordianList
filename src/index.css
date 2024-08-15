@@ -1,0 +1,95 @@
+:root{
+  --border-color: #d8d8d8;
+  --success-color: #26bc6a;
+  --danger-color: #ff0000;
+  --primary-color:#1284ee;
+  --primary-font-color:#0b0c11;
+  --secondary-font-color:#686868;
+  --border-radius:0.5rem;
+
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,h2,h3,h4,h5{
+  margin:0px;
+  text-transform: capitalize;
+}
+
+
+ul,ol{
+  padding:0px;
+  margin-top: 0px;
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+input,select{
+  border: 1px solid var(--border-color);
+  height:2rem;
+  padding: 0rem 0.25rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+textarea{
+    border: 1px solid var(--border-color);
+    padding: 0rem 0.25rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    resize: none;
+}
+
+button{
+  padding: 0px;
+}
+
+input:focus,section:focus,textarea:focus{
+  outline: none;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* scrollbar */
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
